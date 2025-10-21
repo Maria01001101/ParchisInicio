@@ -17,20 +17,26 @@ public class PanelTablero extends javax.swing.JPanel {
     /**
      * Creates new form PanelTablero
      */
+    //Constructor
     public PanelTablero() {
         initComponents();
+        //MouseAdapter
         this.addMouseListener(new MouseAdapter() {
             @Override
+            //MouseEvent
             public void mousePressed(MouseEvent e) {
+                //Clase point
                 Point p = e.getPoint();
                 moverFicha(p);
             }
         });
-    }
+    }//Fin del constructor
+    
     public void moverFicha(Point p) {
+        //Clase point
         imgFicha.setLocation(p);
         System.out.println("Coordenadas : " + p.x + " , " + p.y);
-    }
+    }//fin del metodo moverFicha
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -46,10 +52,10 @@ public class PanelTablero extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        imgFicha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Ficha.png"))); // NOI18N
-        add(imgFicha, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 70, 70));
+        imgFicha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FichaRoja.png"))); // NOI18N
+        add(imgFicha, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 40, 50));
 
-        imgFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/tablerografico.png"))); // NOI18N
+        imgFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/tablerografico2.png"))); // NOI18N
         add(imgFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 

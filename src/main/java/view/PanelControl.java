@@ -29,8 +29,8 @@ public class PanelControl extends javax.swing.JPanel {
         btnDado = new javax.swing.JButton();
         btnReinicio = new javax.swing.JButton();
         btnMenu = new javax.swing.JButton();
-        lblTurno = new javax.swing.JLabel();
-        lblDado = new javax.swing.JLabel();
+        lblFichaTurno = new javax.swing.JLabel();
+        lblNumeroDado = new javax.swing.JLabel();
 
         btnDado.setText("Dado");
 
@@ -38,44 +38,43 @@ public class PanelControl extends javax.swing.JPanel {
 
         btnMenu.setText("Menú");
 
-        lblTurno.setText("Ficha Turno");
+        lblFichaTurno.setText("Ficha Turno");
 
-        lblDado.setText("Número Dado");
+        lblNumeroDado.setText("Número Dado");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnMenu)
-                            .addComponent(btnReinicio)
-                            .addComponent(btnDado)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblTurno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblDado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                    .addComponent(lblFichaTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNumeroDado)
+                    .addComponent(btnDado))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 262, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnReinicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnMenu))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(btnDado)
-                .addGap(26, 26, 26)
-                .addComponent(lblDado)
-                .addGap(18, 18, 18)
-                .addComponent(lblTurno)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
-                .addComponent(btnReinicio)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnMenu)
-                .addGap(20, 20, 20))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(21, Short.MAX_VALUE)
+                        .addComponent(btnReinicio)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnMenu))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(9, 9, 9)
+                        .addComponent(lblFichaTurno)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnDado)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblNumeroDado)))
+                .addGap(11, 11, 11))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -84,7 +83,7 @@ public class PanelControl extends javax.swing.JPanel {
     private javax.swing.JButton btnDado;
     private javax.swing.JButton btnMenu;
     private javax.swing.JButton btnReinicio;
-    private javax.swing.JLabel lblDado;
-    private javax.swing.JLabel lblTurno;
+    private javax.swing.JLabel lblFichaTurno;
+    private javax.swing.JLabel lblNumeroDado;
     // End of variables declaration//GEN-END:variables
 }
