@@ -28,5 +28,8 @@ public class Dado {
     public int getValorActual() {
         return numero;
     }
+    public int getValorActual1() {
+        return numero;
+    }
 
 }
