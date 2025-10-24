@@ -2,6 +2,7 @@ view\GUIInstrucciones.class
 model\CoordenadasHome.class
 model\TableroCoordenadas.class
 view\GUIInicio$3.class
+model\Dado.class
 view\GUIJuego.class
 view\PanelTablero$1.class
 view\GUIInicio$2.class

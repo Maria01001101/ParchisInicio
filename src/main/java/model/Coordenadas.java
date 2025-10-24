@@ -25,5 +25,10 @@ public class Coordenadas {
     public int getY() {
         return y;
     }
+    
+    public int getY1() {
+        return y;
+    }
+    
 
 }

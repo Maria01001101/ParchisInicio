@@ -30,6 +30,7 @@ public class Dado {
     }
     public int getValorActual1() {
         return numero;
+        
     }
 
 }
