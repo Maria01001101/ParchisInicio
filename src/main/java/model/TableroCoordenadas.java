@@ -11,32 +11,107 @@ package model;
 public class TableroCoordenadas {
 
     private Coordenadas[] recorrido = new Coordenadas[]{
-        new Coordenadas(292, 448),//1
-        new Coordenadas(294, 426),//2
-        new Coordenadas(294, 404),//3
-        new Coordenadas(294, 379),//4
-        new Coordenadas(294, 353),//5
-        new Coordenadas(294, 331),//6
-        new Coordenadas(294, 309),//7
+        //1-10
+        new Coordenadas(315, 470),//1
+        new Coordenadas(315, 450),//2
+        new Coordenadas(315, 426),//3
+        new Coordenadas(315, 401),//4
+        new Coordenadas(315, 379),//5
+        new Coordenadas(315, 356),//6
+        new Coordenadas(315, 333),//7
 
         //8-9
-        new Coordenadas(294, 286),//8
-        new Coordenadas(307, 267),//9
+        new Coordenadas(315, 308),//8
+        new Coordenadas(331, 292),//9
 
         //10-16
-        new Coordenadas(331, 270),//10
-        new Coordenadas(352, 270),//11
-        new Coordenadas(377, 270),//12
-        new Coordenadas(401, 270),//13
-        new Coordenadas(424, 270),//14
-        new Coordenadas(447, 270),//15
-        new Coordenadas(472, 270),//16
+        new Coordenadas(355, 298),//10
+        new Coordenadas(377, 298),//11
+        new Coordenadas(401, 298),//12
+        new Coordenadas(424, 298),//13
+        new Coordenadas(447, 298),//14
+        new Coordenadas(472, 298),//15
+        new Coordenadas(494, 298),//16
 
-        //17
-        new Coordenadas(472, 214),//17
-    //Faltan y se tienen que cambiar las coordenadas
+        //17 camino win azul
+        new Coordenadas(493, 242),//17
+
+        //18-24
+        new Coordenadas(495, 183),//18
+        new Coordenadas(470, 183),//19
+        new Coordenadas(447, 183),//20
+        new Coordenadas(423, 183),//21
+        new Coordenadas(401, 183),//22
+        new Coordenadas(377, 183),//23
+        new Coordenadas(353, 183),//24
+
+        //25-26
+        new Coordenadas(330, 188),//25
+        new Coordenadas(311, 170),//26
+
+        //27-33
+        new Coordenadas(319, 148),//27
+        new Coordenadas(319, 124),//28
+        new Coordenadas(319, 100),//29
+        new Coordenadas(319, 79),//30
+        new Coordenadas(319, 53),//31
+        new Coordenadas(319, 30),//32
+        new Coordenadas(319, 8),//33
+
+        //34 camino win rojo
+        new Coordenadas(262, 8),//34
+
+        //35-41
+        new Coordenadas(209, 6),//35
+        new Coordenadas(209, 28),//36
+        new Coordenadas(209, 56),//37
+        new Coordenadas(209, 78),//38
+        new Coordenadas(209, 100),//39
+        new Coordenadas(209, 124),//40
+        new Coordenadas(209, 148),//41
+
+        //42-43
+        new Coordenadas(209, 171),//42
+        new Coordenadas(194, 186),//43
+
+        //44-50
+        new Coordenadas(171, 185),//44
+        new Coordenadas(149, 185),//45
+        new Coordenadas(124, 185),//46
+        new Coordenadas(100, 185),//47
+        new Coordenadas(77, 185),//48
+        new Coordenadas(53, 185),//49
+        new Coordenadas(30, 185),//50
+
+        //51 camino win de verde
+        new Coordenadas(30, 237),//51
+
+        //52-58
+        new Coordenadas(30, 292),//52
+        new Coordenadas(55, 292),//53
+        new Coordenadas(124, 292),//54
+        new Coordenadas(100, 292),//55
+        new Coordenadas(124, 292),//56
+        new Coordenadas(147, 292),//57
+        new Coordenadas(171, 292),//58
+
+        //59-60
+        new Coordenadas(194, 288),//59
+        new Coordenadas(210, 308),//60
+
+        //61-67
+        new Coordenadas(208, 332),//61
+        new Coordenadas(208, 356),//62
+        new Coordenadas(208, 377),//63
+        new Coordenadas(210, 400),//64
+        new Coordenadas(210, 427),//65
+        new Coordenadas(210, 448),//66
+        new Coordenadas(210, 471),//67
+
+        //68 camino win amarillo
+        new Coordenadas(262, 471),//68
     };
-    
+
     private int salida_amarillo = 5;
     private int salida_azul = 22;
     private int salida_rojo = 39;
@@ -49,6 +124,5 @@ public class TableroCoordenadas {
     public int getTotalCasillas() {
         return recorrido.length;
     }
-;
 
 }
